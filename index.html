@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <h1 id="countdown-heading" class="heading" style="display: none;">Birthday Countdown for <span id="birthday-name"></span></h1>
+
+        <div class="form" id="input-form">
+            <input type="text" id="name-input" placeholder="Enter Name" />
+            <input type="number" id="day-input" placeholder="Enter Day" min="1" max="31" />
+            <select id="month-input">
+                <option value="">Select Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <button id="generate-link" class="btn">Generate Countdown</button>
+        </div>
+
+        <div id="birthdate-info" class="birthdate"></div>
+
+        <div id="countdown" class="countdown-wrapper" style="display: none;"></div>
+
+        <div id="options" style="display: none;">
+            <button id="new-countdown" class="btn">Create New Countdown</button>
+            <button id="go-back" class="btn" style="display: none;">Go Back</button>
+            <!-- Initially hidden -->
+        </div>
+    </div>
+</body>
+
+</html>
